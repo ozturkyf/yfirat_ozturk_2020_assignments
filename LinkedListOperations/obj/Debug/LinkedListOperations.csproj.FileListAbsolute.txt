@@ -1,0 +1,6 @@
+C:\Users\MechSoft-Asus2385195\source\repos\ArrayOperations\LinkedListOperations\bin\Debug\LinkedListOperations.exe.config
+C:\Users\MechSoft-Asus2385195\source\repos\ArrayOperations\LinkedListOperations\bin\Debug\LinkedListOperations.exe
+C:\Users\MechSoft-Asus2385195\source\repos\ArrayOperations\LinkedListOperations\bin\Debug\LinkedListOperations.pdb
+C:\Users\MechSoft-Asus2385195\source\repos\ArrayOperations\LinkedListOperations\obj\Debug\LinkedListOperations.csprojAssemblyReference.cache
+C:\Users\MechSoft-Asus2385195\source\repos\ArrayOperations\LinkedListOperations\obj\Debug\LinkedListOperations.exe
+C:\Users\MechSoft-Asus2385195\source\repos\ArrayOperations\LinkedListOperations\obj\Debug\LinkedListOperations.pdb
