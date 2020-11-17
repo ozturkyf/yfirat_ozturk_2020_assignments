@@ -1,6 +1,0 @@
-C:\Users\MechSoft-Asus2385195\source\repos\ArrayOperations\ArrayOperations\bin\Debug\ArrayOperations.exe.config
-C:\Users\MechSoft-Asus2385195\source\repos\ArrayOperations\ArrayOperations\bin\Debug\ArrayOperations.exe
-C:\Users\MechSoft-Asus2385195\source\repos\ArrayOperations\ArrayOperations\bin\Debug\ArrayOperations.pdb
-C:\Users\MechSoft-Asus2385195\source\repos\ArrayOperations\ArrayOperations\obj\Debug\ArrayOperations.csprojAssemblyReference.cache
-C:\Users\MechSoft-Asus2385195\source\repos\ArrayOperations\ArrayOperations\obj\Debug\ArrayOperations.exe
-C:\Users\MechSoft-Asus2385195\source\repos\ArrayOperations\ArrayOperations\obj\Debug\ArrayOperations.pdb

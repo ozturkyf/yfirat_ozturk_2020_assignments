@@ -12,9 +12,6 @@ namespace LinkedListOperations
         const int size = 1000000;
         static void Main()
         {
-
-            // testLinkedList();
-
             LinkedList<int> linkLst = DiziOlustur(size);
 
             IlkElemanEkleCikar(linkLst, 255);
@@ -148,9 +145,6 @@ namespace LinkedListOperations
             }
 
             Console.Read();
-
-
-
         }
     }
 }
