@@ -126,25 +126,5 @@ namespace LinkedListOperations
                 Console.WriteLine("Metod: {0}", methodName);
             }
         }
-
-        public static void testLinkedList()
-        {
-            var list = new LinkedList<int>();
-            for (int i = 1; i <= 10; i++)
-            {
-                list.AddLast(i);
-            }
-
-            list.AddFirst(-255);
-            list.AddAfter(list.Find(5), -355);
-            list.AddLast(-455);
-
-            foreach (var item in list)
-            {
-                Console.WriteLine(item);
-            }
-
-            Console.Read();
-        }
     }
 }
