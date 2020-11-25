@@ -1,0 +1,6 @@
+C:\Users\MechSoft-Asus2385195\Source\Repos\yfirat_ozturk_2020_assignments\SortAndSearchOperations\bin\Debug\SortAndSearchOperations.exe.config
+C:\Users\MechSoft-Asus2385195\Source\Repos\yfirat_ozturk_2020_assignments\SortAndSearchOperations\bin\Debug\SortAndSearchOperations.exe
+C:\Users\MechSoft-Asus2385195\Source\Repos\yfirat_ozturk_2020_assignments\SortAndSearchOperations\bin\Debug\SortAndSearchOperations.pdb
+C:\Users\MechSoft-Asus2385195\Source\Repos\yfirat_ozturk_2020_assignments\SortAndSearchOperations\obj\Debug\SortAndSearchOperations.csprojAssemblyReference.cache
+C:\Users\MechSoft-Asus2385195\Source\Repos\yfirat_ozturk_2020_assignments\SortAndSearchOperations\obj\Debug\SortAndSearchOperations.exe
+C:\Users\MechSoft-Asus2385195\Source\Repos\yfirat_ozturk_2020_assignments\SortAndSearchOperations\obj\Debug\SortAndSearchOperations.pdb
