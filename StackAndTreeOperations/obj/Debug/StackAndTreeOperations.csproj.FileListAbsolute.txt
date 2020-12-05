@@ -1,0 +1,6 @@
+C:\Users\MechSoft-Asus2385195\Source\Repos\yfirat_ozturk_2020_assignments\StackAndTreeOperations\obj\Debug\StackAndTreeOperations.csprojAssemblyReference.cache
+C:\Users\MechSoft-Asus2385195\Source\Repos\yfirat_ozturk_2020_assignments\StackAndTreeOperations\bin\Debug\StackAndTreeOperations.exe.config
+C:\Users\MechSoft-Asus2385195\Source\Repos\yfirat_ozturk_2020_assignments\StackAndTreeOperations\bin\Debug\StackAndTreeOperations.exe
+C:\Users\MechSoft-Asus2385195\Source\Repos\yfirat_ozturk_2020_assignments\StackAndTreeOperations\bin\Debug\StackAndTreeOperations.pdb
+C:\Users\MechSoft-Asus2385195\Source\Repos\yfirat_ozturk_2020_assignments\StackAndTreeOperations\obj\Debug\StackAndTreeOperations.exe
+C:\Users\MechSoft-Asus2385195\Source\Repos\yfirat_ozturk_2020_assignments\StackAndTreeOperations\obj\Debug\StackAndTreeOperations.pdb

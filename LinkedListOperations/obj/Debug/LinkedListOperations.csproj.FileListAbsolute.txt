@@ -3,3 +3,9 @@ C:\Users\MechSoft-Asus2385195\source\repos\ArrayOperations\LinkedListOperations\
 C:\Users\MechSoft-Asus2385195\source\repos\ArrayOperations\LinkedListOperations\bin\Debug\LinkedListOperations.pdb
 C:\Users\MechSoft-Asus2385195\source\repos\ArrayOperations\LinkedListOperations\obj\Debug\LinkedListOperations.exe
 C:\Users\MechSoft-Asus2385195\source\repos\ArrayOperations\LinkedListOperations\obj\Debug\LinkedListOperations.pdb
+C:\Users\MechSoft-Asus2385195\Source\Repos\yfirat_ozturk_2020_assignments\LinkedListOperations\bin\Debug\LinkedListOperations.exe.config
+C:\Users\MechSoft-Asus2385195\Source\Repos\yfirat_ozturk_2020_assignments\LinkedListOperations\bin\Debug\LinkedListOperations.exe
+C:\Users\MechSoft-Asus2385195\Source\Repos\yfirat_ozturk_2020_assignments\LinkedListOperations\bin\Debug\LinkedListOperations.pdb
+C:\Users\MechSoft-Asus2385195\Source\Repos\yfirat_ozturk_2020_assignments\LinkedListOperations\obj\Debug\LinkedListOperations.exe
+C:\Users\MechSoft-Asus2385195\Source\Repos\yfirat_ozturk_2020_assignments\LinkedListOperations\obj\Debug\LinkedListOperations.pdb
+C:\Users\MechSoft-Asus2385195\Source\Repos\yfirat_ozturk_2020_assignments\LinkedListOperations\obj\Debug\LinkedListOperations.csprojAssemblyReference.cache

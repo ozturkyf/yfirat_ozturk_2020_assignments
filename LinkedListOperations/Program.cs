@@ -9,11 +9,10 @@ namespace LinkedListOperations
 {
     class Program
     {
-        const int size = 1000000;
+        const int size = 10;
         static void Main()
         {
             LinkedList<int> linkLst = DiziOlustur(size);
-
             IlkElemanEkleCikar(linkLst, 255);
             OrtadakiElemanEkleCikar(linkLst, 255);
             SonElemanEkleCikar(linkLst, 255);
@@ -67,8 +66,8 @@ namespace LinkedListOperations
         {
             AddedLine("--> Ortadaki Eleman Ekle Çıkar");
             Console.ForegroundColor = ConsoleColor.Green;
-            LinkedListNode<int> middle = lst.Find(lst.ElementAt(lst.Count/2));
 
+            LinkedListNode<int> middle = lst.Find(lst.ElementAt(lst.Count / 2 - 1));
             //Ortadaki eleman ekle
             var s1 = Stopwatch.StartNew();
             lst.AddAfter(middle, val);
@@ -79,7 +78,7 @@ namespace LinkedListOperations
 
             //Ortadaki eleman çıkar
             var s2 = Stopwatch.StartNew();
-            lst.Remove(middle);
+            lst.Remove(middle.Next);
             s2.Stop();
             //---------------
             double t2 = s2.Elapsed.TotalMilliseconds;

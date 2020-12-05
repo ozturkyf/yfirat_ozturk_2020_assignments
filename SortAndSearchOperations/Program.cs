@@ -13,7 +13,7 @@ namespace SortAndSearchOperations
         {
             Console.ForegroundColor = ConsoleColor.Green;
             #region Dizi Oluşturma
-            int size = 100000;
+            int size = 1000;
             Random rnd = new Random();
             int[] arr = new int[size];
             var s1 = Stopwatch.StartNew();
@@ -32,7 +32,7 @@ namespace SortAndSearchOperations
             var s2 = Stopwatch.StartNew();
             BubbleSort(arr);
             s2.Stop();
-            Console.WriteLine("Dizi sort süresi {0} ms", s2.Elapsed.TotalMilliseconds.ToString());
+            Console.WriteLine("Dizi sıralama süresi {0} ms", s2.Elapsed.TotalMilliseconds.ToString());
             #endregion
             Console.WriteLine("--------------------------------");
             Console.ForegroundColor = ConsoleColor.Green;
@@ -46,7 +46,7 @@ namespace SortAndSearchOperations
             }
             else
             {
-                Console.WriteLine("Aranan eleman index no:  " + result);
+                Console.WriteLine("Aranan eleman index no: " + result);
             }
             s3.Stop();
             Console.WriteLine("Dizi arama süresi {0} ms", s3.Elapsed.TotalMilliseconds.ToString()); 
