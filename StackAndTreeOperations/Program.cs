@@ -61,16 +61,16 @@ namespace StackAndTreeOperations
                 {
                     while (opStk.Peek() != '(')
                     {
-                        valStk.Push(applyOp(opStk.Pop(), valStk.Pop(), valStk.Pop()));
+                        valStk.Push(ApplyOp(opStk.Pop(), valStk.Pop(), valStk.Pop()));
                     }
                     opStk.Pop();
                 }
-                else if (chr[i] == '+' || chr[i] == '-' || chr[i] == '*' || chr[i] == '/' || chr[i] == '/')
+                else if (chr[i] == '+' || chr[i] == '-' || chr[i] == '*' || chr[i] == '/' || chr[i] == '%')
                 {
 
-                    while (opStk.Count != 0 && hasPrecedence(chr[i], opStk.Peek()))
+                    while (opStk.Count != 0 && HasPrecedence(chr[i], opStk.Peek()))
                     {
-                        valStk.Push(applyOp(opStk.Pop(), valStk.Pop(), valStk.Pop()));
+                        valStk.Push(ApplyOp(opStk.Pop(), valStk.Pop(), valStk.Pop()));
                     }
 
                     opStk.Push(chr[i]);
@@ -79,13 +79,13 @@ namespace StackAndTreeOperations
 
             while (opStk.Count != 0)
             {
-                valStk.Push(applyOp(opStk.Pop(), valStk.Pop(), valStk.Pop()));
+                valStk.Push(ApplyOp(opStk.Pop(), valStk.Pop(), valStk.Pop()));
             }
 
             return valStk.Pop();
         }
 
-        public static bool hasPrecedence(char op1, char op2)
+        public static bool HasPrecedence(char op1, char op2)
         {
             if (op2 == '(' || op2 == ')')
                 return false;
@@ -95,7 +95,7 @@ namespace StackAndTreeOperations
                 return true;
         }
 
-        public static int applyOp(char op, int b, int a)
+        public static int ApplyOp(char op, int b, int a)
         {
             switch (op)
             {
@@ -107,7 +107,7 @@ namespace StackAndTreeOperations
                     return a * b;
                 case '/':
                     if (b == 0)
-                        throw new Exception("Cannot divide by zero");
+                        throw new Exception("0 a bölünemez.");
                     return a / b;
                 case '%':
                     return a % b;
