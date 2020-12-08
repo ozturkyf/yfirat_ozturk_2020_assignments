@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StackAndTreeOperations
 {
-    class StackSample
+    class StackSample2
     {
         public static int CallStck()
         {

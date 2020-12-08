@@ -10,109 +10,36 @@ namespace StackAndTreeOperations
     {
         public static void Main(string[] args)
         {
-            int value = 0;
+            ArithmeticExpressionTree ExpTree = new ArithmeticExpressionTree();//initializing tree
+            int resultStack = 0;
+            int resultTree = 0;
             while (true)
             {
 
-                Console.Write("Hesaplanacak Değer Giriniz: ");
+                Console.Write("Hesaplanacak String Değer Giriniz: ");
                 string line = Console.ReadLine();
-                 if (string.IsNullOrEmpty(line))
-                    break;
-                value = EvalExp(line);
-
-                Console.WriteLine("{0}={1}", line, value);
-
-            }
-        }
-
-        public static int EvalExp(String exp)
-        {
-
-            char[] chr = exp.ToCharArray();
-
-            Stack<int> valStk = new Stack<int>();
-            Stack<char> opStk = new Stack<char>();
-
-            for (int i = 0; i < exp.Length; i++)
-            {
-                if (chr[i] == ' ')
+                line = line.Replace(" ", "");
+                char[] chr = line.ToCharArray();
+                if (!ArithmeticExpressionStack.RegEx(chr))
+                {
+                    Console.WriteLine("Hesaplama yapılabilecek değer girmediniz!!");
                     continue;
-
-                if (chr[i] >= '0' && chr[i] <= '9')
-                {
-                    StringBuilder sb = new StringBuilder();
-
-                    for (int j = i; j < chr.Length; j++)
-                    {
-                        if (!Char.IsNumber(chr[j]))
-                        {
-                            i = --j;
-                            break;
-                        }
-                        sb.Append(chr[j]);
-                    }
-                    valStk.Push(int.Parse(sb.ToString()));
                 }
-                else if (chr[i] == '(')
-                {
-                    opStk.Push(chr[i]);
-                }
-                else if (chr[i] == ')')
-                {
-                    while (opStk.Peek() != '(')
-                    {
-                        valStk.Push(ApplyOp(opStk.Pop(), valStk.Pop(), valStk.Pop()));
-                    }
-                    opStk.Pop();
-                }
-                else if (chr[i] == '+' || chr[i] == '-' || chr[i] == '*' || chr[i] == '/' || chr[i] == '%')
-                {
 
-                    while (opStk.Count != 0 && HasPrecedence(chr[i], opStk.Peek()))
-                    {
-                        valStk.Push(ApplyOp(opStk.Pop(), valStk.Pop(), valStk.Pop()));
-                    }
-
-                    opStk.Push(chr[i]);
+                if (string.IsNullOrEmpty(line))
+                {
+                    Console.WriteLine("Boş değer giremezsiniz!!");
+                    continue;
                 }
+
+                Console.ForegroundColor = ConsoleColor.Green;
+                resultStack = ArithmeticExpressionStack.EvalExp(chr);
+                Console.WriteLine("Stack ile hesaplama sonucu: {0} = {1}", line, resultStack);
+                ExpTree.ExpressionString = line;
+                resultTree = ExpTree.Evaluation();
+                Console.WriteLine("Tree ile hesaplama sonucu: {0} = {1}", line, resultTree);
+                Console.ResetColor();
             }
-
-            while (opStk.Count != 0)
-            {
-                valStk.Push(ApplyOp(opStk.Pop(), valStk.Pop(), valStk.Pop()));
-            }
-
-            return valStk.Pop();
         }
-
-        public static bool HasPrecedence(char op1, char op2)
-        {
-            if (op2 == '(' || op2 == ')')
-                return false;
-            if ((op1 == '*' || op1 == '/') && (op2 == '%' || op2 == '+' || op2 == '-'))
-                return false;
-            else
-                return true;
-        }
-
-        public static int ApplyOp(char op, int b, int a)
-        {
-            switch (op)
-            {
-                case '+':
-                    return a + b;
-                case '-':
-                    return a - b;
-                case '*':
-                    return a * b;
-                case '/':
-                    if (b == 0)
-                        throw new Exception("0 a bölünemez.");
-                    return a / b;
-                case '%':
-                    return a % b;
-            }
-            return 0;
-        }
-    }
+     }
 }
