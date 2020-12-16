@@ -21,15 +21,20 @@ namespace StackAndTreeOperations
                 if (chr[i] >= '0' && chr[i] <= '9')
                 {
                     StringBuilder sb = new StringBuilder();
-
+                    bool deg = true;
                     for (int j = i; j < chr.Length; j++)
                     {
                         if (!Char.IsNumber(chr[j]))
                         {
                             i = --j;
                             break;
+                            deg = false;
                         }
                         sb.Append(chr[j]);
+                        if (deg)
+                        {
+                            i = j;
+                        }
                     }
                     valStk.Push(int.Parse(sb.ToString()));
                 }
@@ -48,10 +53,11 @@ namespace StackAndTreeOperations
                 else if (chr[i] == '+' || chr[i] == '-' || chr[i] == '*' || chr[i] == '/' || chr[i] == '%')
                 {
 
-                    while (opStk.Count != 0 && HasPriorityStatus(chr[i], opStk.Peek()))
+                    while (opStk.Count != 0 && HasPrecedenceStatus(chr[i], opStk.Peek()))
                     {
                         valStk.Push(OperatorAction(opStk.Pop(), valStk.Pop(), valStk.Pop()));
                     }
+                    
 
                     opStk.Push(chr[i]);
                 }
@@ -65,8 +71,9 @@ namespace StackAndTreeOperations
             return valStk.Pop();
         }
 
-        public static bool HasPriorityStatus(char op1, char op2)
+        public static bool HasPrecedenceStatus(char op1, char op2)
         {
+
             if (op2 == '(' || op2 == ')')
                 return false;
             if ((op1 == '*' || op1 == '/' || op1 == '%') && (op2 == '+' || op2 == '-'))
@@ -101,7 +108,7 @@ namespace StackAndTreeOperations
         public static bool RegEx(char[] val)
         {
             //char[] arr = new char[] { '+', '-', '*', '/', '%','0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
-            char[] arr2 = new char[] { '+', '-', '*', '/', '%' };
+            char[] arr2 = new char[] { '+', '-', '*', '/', '%','(',')' };
 
 
             foreach (var item in val)

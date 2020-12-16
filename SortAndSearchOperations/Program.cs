@@ -84,20 +84,20 @@ namespace SortAndSearchOperations
 
             for (int i = 0; i < arr.Length - 1; i++)
             {
-                int ortanca = ilk + (son - ilk) / 2;
+                int orta = ilk + (son - ilk) / 2;
 
-                if (arr[ortanca] == deger)
+                if (arr[orta] == deger)
                 {
-                    return ortanca;
+                    return orta;
                 }
 
-                if (arr[ortanca] < deger)
+                if (arr[orta] < deger)
                 {
-                    ilk = ortanca + 1;
+                    ilk = orta + 1;
                 }
                 else
                 {
-                    son = ortanca - 1;
+                    son = orta - 1;
                 }
             }
             return -1;

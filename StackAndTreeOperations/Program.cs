@@ -10,7 +10,7 @@ namespace StackAndTreeOperations
     {
         public static void Main(string[] args)
         {
-            ArithmeticExpressionTree ExpTree = new ArithmeticExpressionTree();//initializing tree
+            ArithmeticExpressionTree ExpTree = new ArithmeticExpressionTree();
             int resultStack = 0;
             int resultTree = 0;
             while (true)
@@ -36,7 +36,7 @@ namespace StackAndTreeOperations
                 resultStack = ArithmeticExpressionStack.EvalExp(chr);
                 Console.WriteLine("Stack ile hesaplama sonucu: {0} = {1}", line, resultStack);
                 ExpTree.ExpressionString = line;
-                resultTree = ExpTree.Evaluation();
+                resultTree = ExpTree.Hesaplama();
                 Console.WriteLine("Tree ile hesaplama sonucu: {0} = {1}", line, resultTree);
                 Console.ResetColor();
             }

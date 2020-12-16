@@ -9,7 +9,7 @@ namespace LinkedListOperations
 {
     class Program
     {
-        const int size = 10;
+        const int size = 1000000;
         static void Main()
         {
             LinkedList<int> linkLst = DiziOlustur(size);
@@ -67,9 +67,10 @@ namespace LinkedListOperations
             AddedLine("--> Ortadaki Eleman Ekle Çıkar");
             Console.ForegroundColor = ConsoleColor.Green;
 
-            LinkedListNode<int> middle = lst.Find(lst.ElementAt(lst.Count / 2 - 1));
+            
             //Ortadaki eleman ekle
             var s1 = Stopwatch.StartNew();
+            LinkedListNode<int> middle = lst.Find(lst.ElementAt(lst.Count / 2 - 1));
             lst.AddAfter(middle, val);
             s1.Stop();
             //------------------
